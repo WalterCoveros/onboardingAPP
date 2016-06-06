@@ -30,6 +30,10 @@ apply plugin: "findbugs"
 apply plugin: 'checkstyle'
 apply plugin: "sonar-runner"
 
+jacoco {
+        toolVersion = "0.7.4+"
+    }
+    
 jacocoTestReport {
     reports {
         xml.enabled true
